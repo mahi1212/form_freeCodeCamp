@@ -12,7 +12,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: rgb(54, 135, 150);
+    background:linear-gradient(to right, #3B3C8C,#3B3C8C);
 }
 
 #title{
@@ -36,7 +36,7 @@
     max-width:900px;
     width: 100%;
     padding: 3rem;
-    background: linear-gradient(to right, rgba(5, 25, 80,0.4), rgba(5, 25, 80,0.4));
+    background: linear-gradient(to right, #2E2C47, #2E2C47);
     margin-top: 10px 0.3rem;
     border-radius: 5px;
 }
@@ -174,9 +174,15 @@ textarea{
     padding: 15px;
 }
 
+.mt{
+    margin-top: 50px;
+}
+
 #submit{
     width: 100%;
     font-size: 20px;
     padding: 15px;
     background: #37AF65;
+    border-radius: 5px;
+    border:none;
 }
