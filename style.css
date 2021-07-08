@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.container{
+    max-width: 600;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#description{
+    font-size: 2rem;
+    text-align: center;
+}
+
+#survey-form{
+    max-width:900px;
+    width: 100%;
+    padding: 2rem;
+    background:gray;
+    margin: 10 auto;
+}
