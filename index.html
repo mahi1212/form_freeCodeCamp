@@ -31,16 +31,31 @@
                 <div class="detaills">
                     <p class="additional">Which option best describes your current role?</p>
                     <select name="role" id="dropdown">
-                        <option value="dropdown">Select current role</option>
+                        <option value="dropdown" id="gray">Select current role</option>
                         <option value="student">Student</option>
                         <option value="employee">Emolyee</option>
                     </select>
                 </div>
                 <div class="detaills">
+                    <input type="radio" name="recommend" id="one">
+                    <input type="radio" name="recommend" id="two">
+                    <input type="radio" name="recommend" id="three">
+                    
                     <p class="additional">Would you recommend freeCodeCamp to a friend?</p>
-                    <label for="one"><input type="radio" name="recommend" id="one">Yes</label>
-                    <label for="two"><input type="radio" name="recommend" id="two">No</label>
-                    <label for="three"><input type="radio" name="recommend" id="three">Maybe</label>
+                    <label for="one" class="one">
+                        <div class="dot"></div>
+                        <div class="text" id="one">Yes</div>
+                    </label>
+                    <br>
+                    <label for="two" class="two">
+                        <div class="dot"></div>
+                        <div class="text" id="two">No</div>
+                    </label>
+                    <br>
+                    <label for="three" class="three">
+                        <div class="dot"></div>
+                        <div class="text" id="three">Maybe</div>
+                    </label>
                 </div>
                 <div class="detaills">
                     <p class="additional">What would you like to see improved? (Check all that apply)</p>
