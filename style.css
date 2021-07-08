@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Lato', sans-serif;
+
 }
 
 .container{
@@ -11,22 +12,54 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: rgb(54, 135, 150);
 }
 
 #title{
-    font-size: 3rem;
+    font-size: 2.7rem;
     text-align: center;
+    letter-spacing: 2px;
+    margin: 3rem 0 2rem;
+    color: #fff;
+    font-weight: lighter;
 }
 
 #description{
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 300;
+    color: #fff;
 }
 
 #survey-form{
     max-width:900px;
     width: 100%;
-    padding: 2rem;
-    background:gray;
-    margin: 10 auto;
+    padding: 3rem;
+    background: linear-gradient(to right, rgba(5, 25, 80,0.4), rgba(5, 25, 80,0.4));
+    margin-top: 10px 1rem;
+    border-radius: 5px;
+}
+
+.detaills #name-label,
+.detaills #email-label,
+.detaills #number-label,
+.additional{
+    font-size: 1.8rem;
+    color: #fff;
+    display: block;
+}
+
+form input{
+    font-size: 23px;
+    width: 100%;
+    margin-top: -10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.detaills{
+    margin: 1rem 0;
 }
