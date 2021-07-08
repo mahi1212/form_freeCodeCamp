@@ -74,7 +74,7 @@ form input[type="number"]
     font-size: 1.8rem;
     color: #fff;
     margin-bottom: 10px;
-}
+} 
 
 form select{
     font-size: 23px;
@@ -107,7 +107,6 @@ form select{
     padding: 10px;
     border: 2px solid blue;
     position: relative;
-    transition: all 0.2s;
 }
 
 .detaills .dot::before{
@@ -119,7 +118,7 @@ form select{
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 50%;
-    
+    transition:  all 0.2s;
 }
 
 #one:checked ~ .one .dot::before,
@@ -128,6 +127,56 @@ form select{
     background: rgb(69, 60, 204);
 }
 
-.detaills input[type="radio"]{
+.detaills input[type="radio"],
+.detaills input[type="checkbox"]{
     display: none;
+}
+
+.detaills .c-one,
+.detaills .c-two{
+    display: flex;
+    align-items: center;
+}
+
+.detaills .rect{
+    width: 25px;
+    height: 25px;
+    background: rgb(253, 253, 253);
+    border-radius: 3px;
+    position: relative;
+    
+}
+
+.detaills .rect::before{
+    content: "";
+    width: 15px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-bottom: 4px solid #fff;
+    border-left: 4px solid #fff;
+    transform:translate(-50%,-50%) rotate(-45deg);
+    transition: all 0.3s;
+}
+
+#c-one:checked ~ .c-one .rect::before,
+#c-two:checked ~ .c-two .rect::before{
+    border-bottom: 4px solid green;
+    border-left: 4px solid green;
+}
+
+textarea{
+    width: 100%;
+    font-size: 25px;
+    height: 200px;
+    border-radius: 3px;
+    padding: 15px;
+}
+
+#submit{
+    width: 100%;
+    font-size: 20px;
+    padding: 15px;
+    background: #37AF65;
 }
